@@ -1,0 +1,58 @@
+[package]
+name = "mango-shell-core"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99.1"
+license = "MIT"
+publish = false
+description = "Shared tokens, theme loading and bevelled primitives for mango-shell components"
+
+[features]
+accessibility = ["rune/accessibility"]
+
+[dependencies]
+rune = { git = "https://github.com/anomalyco/rune", rev = "8181948a390adf5182731c4d9b160b95f40efcdd", default-features = false }
+serde_json = "1"
+
+[build-dependencies]
+serde_json = "1"
+
+[dev-dependencies]
+toml = "0.9"
+
+[lints.rust]
+unsafe_code = "forbid"
+missing_docs = "warn"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"
+todo = "deny"
+unimplemented = "deny"
+dbg_macro = "deny"
+print_stdout = "deny"
+print_stderr = "deny"
+float_cmp = "deny"
+indexing_slicing = "warn"
+cast_possible_truncation = "warn"
+cast_sign_loss = "warn"
+module_name_repetitions = "allow"
+must_use_candidate = "allow"
+
+# A dependency's [patch] does not carry over: every workspace that builds rune repeats rune's
+# vendored forks at the same rev. accesskit_windows is unused on Linux; it silences the lock warning.
+[patch.crates-io]
+winit = { git = "https://github.com/anomalyco/rune", rev = "8181948a390adf5182731c4d9b160b95f40efcdd" }
+wgpu-hal = { git = "https://github.com/anomalyco/rune", rev = "8181948a390adf5182731c4d9b160b95f40efcdd" }
+parley_engine = { git = "https://github.com/anomalyco/rune", rev = "8181948a390adf5182731c4d9b160b95f40efcdd" }
+accesskit_windows = { git = "https://github.com/anomalyco/rune", rev = "8181948a390adf5182731c4d9b160b95f40efcdd" }
+
+[profile.dev]
+debug = 1
+
+[profile.dev.package."*"]
+opt-level = 2
+debug = false

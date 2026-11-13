@@ -1,0 +1,14 @@
+msrv = "1.99.1"
+allow-unwrap-in-tests = true
+allow-expect-in-tests = true
+allow-panic-in-tests = true
+allow-indexing-slicing-in-tests = true
+disallowed-methods = [
+    { path = "std::time::Instant::now", reason = "pass `now` in; only a component's runtime reads the clock" },
+    { path = "std::time::SystemTime::now", reason = "pass the time in" },
+    { path = "std::env::var", reason = "read the environment once in main" },
+    { path = "std::process::Command::new", reason = "core spawns no processes" },
+]
+disallowed-types = [
+    { path = "std::sync::Mutex", reason = "use rune's or tokio's locks so none is held across an await" },
+]

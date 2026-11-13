@@ -1,0 +1,8 @@
+[profile.default]
+retries = 0
+
+[profile.quick]
+fail-fast = true
+status-level = "fail"
+final-status-level = "fail"
+slow-timeout = { period = "5s", terminate-after = 2 }

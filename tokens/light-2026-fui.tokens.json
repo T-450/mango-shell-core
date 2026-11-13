@@ -1,0 +1,122 @@
+{
+  "$description": "Colour tokens for mango-shell, generated from tokens/palettes/light-2026.toml by `cargo run --example palette-to-tokens`. Do not edit.",
+  "color": {
+    "accent": {
+      "focus": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#0069cc"
+        }
+      },
+      "signal": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#0550ae"
+        }
+      }
+    },
+    "bg": {
+      "bar": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#ffffff"
+        }
+      },
+      "raised": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#ececec"
+        }
+      }
+    },
+    "line": {
+      "hairline": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#dbdbdb"
+        }
+      },
+      "strong": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#bbbbbb"
+        }
+      }
+    },
+    "selection": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "hex": "#c2daf5"
+      }
+    },
+    "signal": {
+      "empty": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#c8c8c8"
+        }
+      }
+    },
+    "status": {
+      "critical": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#cf222e"
+        }
+      },
+      "ok": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#116329"
+        }
+      },
+      "warn": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#953800"
+        }
+      }
+    },
+    "text": {
+      "on-selection": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#202020"
+        }
+      },
+      "primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#202020"
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#202020"
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#4a4a4a"
+        }
+      }
+    }
+  }
+}

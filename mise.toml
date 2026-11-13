@@ -1,0 +1,6 @@
+# Gate tools for `just gate` (mise manages this project's toolchain).
+[tools]
+just = "1.59.0"
+cargo-deny = "0.20.2"
+"github:bnjbvr/cargo-machete" = "0.9.2"
+"github:nextest-rs/nextest" = { version = "cargo-nextest-0.9.151", bin = "cargo-nextest" }

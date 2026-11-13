@@ -1,0 +1,431 @@
+{
+  "$description": "Dark 2026 FUI tokens for mango-shell. Colour roles from the Ghostty dark-2026 palette; shape, type, glass and motion from the 2026 shell report. W3C DTCG 2025.10 format.",
+  "color": {
+    "bg": {
+      "base": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#0b0c0d"
+        },
+        "$description": "lockscreen, backdrops"
+      },
+      "bar": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#121314"
+        },
+        "$description": "bars and cards, opaque"
+      },
+      "overlay": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#121314"
+        },
+        "$description": "popovers; alpha from glass.opacity"
+      },
+      "raised": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#202122"
+        }
+      }
+    },
+    "line": {
+      "hairline": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#2c2e30"
+        }
+      },
+      "strong": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#555555"
+        },
+        "$description": "panel rims, non-text"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#e1e3e4"
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#bbbebf"
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#9a9ea0"
+        },
+        "$description": "captions and meta"
+      },
+      "on-selection": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#ffffff"
+        }
+      }
+    },
+    "selection": {
+      "$type": "color",
+      "$value": {
+        "colorSpace": "srgb",
+        "hex": "#276782"
+      },
+      "$description": "foreground on it is always text.on-selection"
+    },
+    "accent": {
+      "signal": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#79c0ff"
+        },
+        "$description": "focus, active, live data"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#a5d6ff"
+        },
+        "$description": "focus ring"
+      }
+    },
+    "status": {
+      "ok": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#7ee787"
+        }
+      },
+      "warn": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#cd9731"
+        },
+        "$description": "warnings only, never decoration"
+      },
+      "critical": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#ff7b72"
+        }
+      }
+    },
+    "module": {
+      "network": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#7ee787"
+        }
+      },
+      "cpu": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#79c0ff"
+        }
+      },
+      "memory": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#4ec9b0"
+        }
+      },
+      "temp": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#ffa657"
+        }
+      },
+      "disk": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#a5d6ff"
+        }
+      },
+      "battery": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#d2a8ff"
+        }
+      }
+    },
+    "signal": {
+      "empty": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "hex": "#3a3d40"
+        },
+        "$description": "empty bars of a signal meter (RSSI)"
+      }
+    }
+  },
+  "glass": {
+    "opacity": {
+      "clear": {
+        "$type": "number",
+        "$value": 0.82
+      },
+      "default": {
+        "$type": "number",
+        "$value": 0.88
+      },
+      "tinted": {
+        "$type": "number",
+        "$value": 0.94
+      },
+      "opaque": {
+        "$type": "number",
+        "$value": 1
+      }
+    },
+    "blur": {
+      "$type": "dimension",
+      "$value": {
+        "value": 32,
+        "unit": "px"
+      }
+    },
+    "highlight-alpha": {
+      "$type": "number",
+      "$value": 0.06
+    }
+  },
+  "shape": {
+    "$description": "Bevels, never capsules. Panels bevel one diagonal pair (top-left, bottom-right).",
+    "nested": {
+      "$type": "dimension",
+      "$value": {
+        "value": 2,
+        "unit": "px"
+      }
+    },
+    "control": {
+      "$type": "dimension",
+      "$value": {
+        "value": 4,
+        "unit": "px"
+      }
+    },
+    "card": {
+      "$type": "dimension",
+      "$value": {
+        "value": 8,
+        "unit": "px"
+      }
+    },
+    "panel": {
+      "$type": "dimension",
+      "$value": {
+        "value": 10,
+        "unit": "px"
+      }
+    }
+  },
+  "font": {
+    "family": {
+      "ui": {
+        "$type": "fontFamily",
+        "$value": [
+          "Inter",
+          "system-ui",
+          "sans-serif"
+        ]
+      },
+      "command": {
+        "$type": "fontFamily",
+        "$value": [
+          "IBM Plex Mono",
+          "monospace"
+        ]
+      }
+    },
+    "size": {
+      "caption": {
+        "$type": "dimension",
+        "$value": {
+          "value": 11,
+          "unit": "px"
+        }
+      },
+      "body": {
+        "$type": "dimension",
+        "$value": {
+          "value": 13,
+          "unit": "px"
+        }
+      },
+      "title": {
+        "$type": "dimension",
+        "$value": {
+          "value": 15,
+          "unit": "px"
+        }
+      },
+      "value": {
+        "$type": "dimension",
+        "$value": {
+          "value": 24,
+          "unit": "px"
+        }
+      },
+      "clock": {
+        "$type": "dimension",
+        "$value": {
+          "value": 120,
+          "unit": "px"
+        }
+      }
+    },
+    "weight": {
+      "value": {
+        "$type": "fontWeight",
+        "$value": 300
+      },
+      "body": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "title": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "caption": {
+        "$type": "fontWeight",
+        "$value": 600
+      }
+    },
+    "caption-tracking": {
+      "$type": "number",
+      "$value": 0.06
+    }
+  },
+  "motion": {
+    "$description": "Spring pairs for rune Spring::new(duration_s, bounce). DTCG has no spring type, so values live under $extensions.",
+    "spatial-fast": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.17,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.17,
+          "bounce": 0.1,
+          "material": "1400/0.9"
+        }
+      }
+    },
+    "spatial-default": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.24,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.24,
+          "bounce": 0.1,
+          "material": "700/0.9"
+        }
+      }
+    },
+    "spatial-slow": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.36,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.36,
+          "bounce": 0.1,
+          "material": "300/0.9"
+        }
+      }
+    },
+    "spatial-hero": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.32,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.32,
+          "bounce": 0.2,
+          "material": "expressive 380/0.8"
+        }
+      }
+    },
+    "effects-fast": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.1,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.1,
+          "bounce": 0.0,
+          "material": "3800/1.0"
+        }
+      }
+    },
+    "effects-default": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.16,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.16,
+          "bounce": 0.0,
+          "material": "1600/1.0"
+        }
+      }
+    },
+    "effects-slow": {
+      "$type": "duration",
+      "$value": {
+        "value": 0.22,
+        "unit": "s"
+      },
+      "$extensions": {
+        "dev.mango-shell.spring": {
+          "duration": 0.22,
+          "bounce": 0.0,
+          "material": "800/1.0"
+        }
+      }
+    }
+  }
+}
